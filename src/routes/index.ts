@@ -1,11 +1,11 @@
 import { Router  } from "express";
 
-import readerImageRouter from "./image.route";
-import geminiRouter from "./gemini.route";
+import measuringRouter from "./measuring.route";
+import customerRouter from "./customer.route";
 
 const routes: Router = Router();
 
-routes.use("/image", readerImageRouter);
-routes.use("/gemini", geminiRouter);
+routes.use("/measure", measuringRouter);
+routes.use("/customer", customerRouter);
 
 export default routes;

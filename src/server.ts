@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '10mb' }));
 
 // Middleware para permitir requisições com corpo JSON
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 
 // Define a rota raiz
 app.use('/api', routes);
